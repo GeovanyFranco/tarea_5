@@ -14,7 +14,7 @@ and open the template in the editor.
         <title>Consulta por Departamento</title>
     </head>
     <body>
-        Seleccione un departamento:
+        Seleccione un Departamento:
         <?php
         // enviando el comando SQL
         $deptos = mysqli_query($conn, "SELECT codigo, nombre FROM departamento order by nombre");
@@ -41,8 +41,8 @@ and open the template in the editor.
             ?>                            
             </select>   
             <br>
-            <input type="submit" value="Listado">
-            
+            <input type="submit" value="Listar">
+            <a href="formulariodepartamento.php">Agregar nuevo</a>
 	</form>
     </body>
 </html>
