@@ -14,7 +14,15 @@ and open the template in the editor.
         <title>Consulta por Departamento</title>
     </head>
     <body>
-        Seleccione un Departamento:
+        <div id="navegador">
+            <ul>
+                <li><a href="consultadepto.php">Inicio</a></li>
+                <li><a href="listaDepartamentos.php">Lista de departametnos</a></li>
+                <li><a href="formulariodepartamento.php">Agregar departamento</a></li>
+                <li><a href="formularioalumno.php">Agregar alumno</a></li>
+            </ul>
+        </div>
+        <h2>Seleccione un Departamento:</h2>
         <?php
         // enviando el comando SQL
         $deptos = mysqli_query($conn, "SELECT codigo, nombre FROM departamento order by nombre");
@@ -40,9 +48,9 @@ and open the template in the editor.
                 mysqli_close($conn);					
             ?>                            
             </select>   
-            <br>
+            <hr>
             
-            <table border="1" width="1" cellspacing="1" cellpadding="1">
+            <table cellpadding="1">
                 <thead>
                     <tr>
                         <th><input type="submit" value="Listar alumno por departamento"></th>
