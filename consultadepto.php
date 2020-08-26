@@ -18,7 +18,7 @@ and open the template in the editor.
             <ul>
                 <li><a href="consultadepto.php">Inicio</a></li>
                 <li><a href="listaDepartamentos.php">Lista de departametnos</a></li>
-                <li><a href="formulariodepartamento.php">Agregar departamento</a></li>
+                <li><a href="listaAlumnos.php">Listado de alumnos</a></li>
                 <li><a href="formularioalumno.php">Agregar alumno</a></li>
             </ul>
         </div>

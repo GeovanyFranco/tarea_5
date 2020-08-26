@@ -17,7 +17,7 @@ require 'database.php'
             <ul>
                 <li><a href="consultadepto.php">Inicio</a></li>
                 <li><a href="listaDepartamentos.php">Lista de departametnos</a></li>
-                <li><a href="formulariodepartamento.php">Agregar departamento</a></li>
+                <li><a href="listaAlumnos.php">Listado de alumnos</a></li>
                 <li><a href="formularioalumno.php">Agregar alumno</a></li>
             </ul>
         </div>
@@ -46,6 +46,18 @@ require 'database.php'
         ?>
         <br>
         <a href="formulariodepartamento.php">Agregar nuevo departamento</a>
+        <hr>
+        <h2>Nuevo Departamento:</h2>
+        <form action="creardepartamento.php" method="post">
+            <table border = "0" >
+                <tr>
+                    <td>Nombre:</td>
+                    <td><input type="text" name="departamento" size="50" required></td>
+                </tr>
+            </table>
+            <input type="submit" value="Grabar">
+            <input type="reset" value="Limpiar">
+        </form>
         <hr>
         <h2>Eliminar departamento</h2>
         <form action="borrardepartamento.php" method="post">
