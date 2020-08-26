@@ -20,7 +20,7 @@ and open the template in the editor.
             </ul>
         </div>
         <h2>Nuevo Departamento:</h2><br>
-        <form action="borrardepartamento.php" method="post">
+        <form action="creardepartamento.php" method="post">
             <table border = "0" >
                 <tr>
                     <td>Nombre:</td>

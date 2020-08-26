@@ -11,7 +11,7 @@ function eliminarDepartamento() {
     $id = $_POST['id'];
     echo '<h2>El id que se borrara es <strong>' . $id . '</strong></h2>';
     $delete = "DELETE FROM `departamento` WHERE codigo=" . $id;
-    echo '<br> La sentencia SQL es: <br> <p text-indent:"15">' . $delete .'</p><hr>';
+    echo '<br> La sentencia SQL es: <br> <p">' . $delete .'</p><hr>';
     $s = mysqli_query($conn, $delete);
     
     mysqli_close($conn);

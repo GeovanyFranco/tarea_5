@@ -48,9 +48,6 @@ require 'database.php'
         <a href="formulariodepartamento.php">Agregar nuevo departamento</a>
         <hr>
         <h2>Eliminar departamento</h2>
-        <?php
-        $seliminar = "DELETE FROM `departamento` WHERE codigo = 12";
-        ?>
         <form action="borrardepartamento.php" method="post">
             <table border = "0" >
                 <tr>
@@ -59,6 +56,20 @@ require 'database.php'
                 </tr>
             </table>
             <input type="submit" value="Borrar">
+            <input type="reset" value="Limpiar area">
+        </form>
+        <hr>
+        <h2>Actualizar departamento</h2>
+        <form action="modificardepartamento.php" method="post">
+            <table border = "0" >
+                <tr>
+                    <td>ID:</td>
+                    <td><input type="number" name="id" placeholder="Codigo a modificar" required></td>
+                    <td>Nombre nuevo:</td>
+                    <td><input type="text" name="nombre" placeholder="Nuevo nombre" required></td>
+                </tr>
+            </table>
+            <input type="submit" value="Actualizar">
             <input type="reset" value="Limpiar area">
         </form>
     </body>
