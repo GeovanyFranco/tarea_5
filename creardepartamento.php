@@ -34,11 +34,12 @@ function insertarDepartamento() {
         if ($r == 0) {
             insertarDepartamento();
             echo "<br>Registro grabado!<br>";
-            echo "<a href='listadopordepto.php?listadeptos=" . $_POST['departamento'] . "'>Ver Listado</a>";
+            echo "<a href='listaDepartamentos.php?listadeptos=" . $_POST['departamento'] . "'>Ver Listado</a>";
         } else {
             // redireccionar a pagina de error
             header('Location: http://localhost/LabDemo/error.php?codigo=' . $r);
         }
         ?>
+        <br>
     </body>
 </html>

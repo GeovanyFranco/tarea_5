@@ -41,8 +41,24 @@ and open the template in the editor.
             ?>                            
             </select>   
             <br>
-            <input type="submit" value="Listar">
-            <a href="formulariodepartamento.php">Agregar nuevo</a>
+            
+            <table border="1" width="1" cellspacing="1" cellpadding="1">
+                <thead>
+                    <tr>
+                        <th><input type="submit" value="Listar alumno por departamento"></th>
+                        <th><a href="listaDepartamentos.php">Listar departamentos</a></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h>
+            
 	</form>
     </body>
 </html>
