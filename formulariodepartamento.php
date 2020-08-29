@@ -11,14 +11,6 @@ and open the template in the editor.
         <title>Registro de departamentos</title>
     </head>
     <body>
-        <div id="navegador">
-            <ul>
-                <li><a href="consultadepto.php">Inicio</a></li>
-                <li><a href="listaDepartamentos.php">Lista de departametnos</a></li>
-                <li><a href="formulariodepartamento.php">Agregar departamento</a></li>
-                <li><a href="formularioalumno.php">Agregar alumno</a></li>
-            </ul>
-        </div>
         <h2>Nuevo Departamento:</h2><br>
         <form action="creardepartamento.php" method="post">
             <table border = "0" >

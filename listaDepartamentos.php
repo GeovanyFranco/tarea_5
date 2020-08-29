@@ -13,14 +13,11 @@ require 'database.php'
         <title></title>
     </head>
     <body>
-        <div id="navegador">
-            <ul>
-                <li><a href="consultadepto.php">Inicio</a></li>
-                <li><a href="listaDepartamentos.php">Lista de departametnos</a></li>
-                <li><a href="listaAlumnos.php">Listado de alumnos</a></li>
-                <li><a href="formularioalumno.php">Agregar alumno</a></li>
-            </ul>
-        </div>
+        <ol>
+            <li><a href="consultadepto.php">Inicio</a></li>
+            <li><a href="listaDepartamentos.php">Operaciones departametnos</a></li>
+            <li><a href="listaAlumnos.php">Operaciones alumnos</a></li>
+        </ol>
         <h2>Listado de departamentos</h2>
         <?php
         // put your code here
